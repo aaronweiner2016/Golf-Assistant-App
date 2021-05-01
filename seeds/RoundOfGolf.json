@@ -1,0 +1,18 @@
+[
+    {
+        "golfCourse_ID": 1,
+        "user_ID": 2
+    },
+    {
+        "golfCourse_ID": 5,
+        "user_ID": 2
+    },
+    {
+        "golfCourse_ID": 3,
+        "user_ID": 3
+    },
+    {
+        "golfCourse_ID": 1,
+        "user_ID": 4
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+      "user_id": 1,
+      "handicap_value":  9
+    },
+    {
+        "user_id": 2,
+        "handicap_value":  12
+      } ,
+      {
+        "user_id": 3,
+        "handicap_value":  11
+      } ,
+      {
+        "user_id": 4,
+        "handicap_value":  12
+      } 
+  ]
