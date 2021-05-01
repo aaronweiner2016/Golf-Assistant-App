@@ -1,18 +1,18 @@
 [
     {
-        "golfCourse_ID": 1,
-        "user_ID": 2
+        "golfcourse_id": 1,
+        "user_id": 2
     },
     {
-        "golfCourse_ID": 5,
-        "user_ID": 2
+        "golfcourse_id": 5,
+        "user_id": 2
     },
     {
-        "golfCourse_ID": 3,
-        "user_ID": 3
+        "golfcourse_id": 3,
+        "user_id": 3
     },
     {
-        "golfCourse_ID": 1,
-        "user_ID": 4
+        "golfcourse_id": 1,
+        "user_id": 4
     }
 ]

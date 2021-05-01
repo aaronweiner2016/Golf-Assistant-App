@@ -21,6 +21,11 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  await RoundOfGolf.bulkCreate(roundOfGolfData, {
+    individualHooks: true,
+    returning: true,
+  });
+
   await GolfHole.bulkCreate(golfHoleData, {
     individualHooks: true,
     returning: true,
@@ -31,10 +36,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await RoundOfGolf.bulkCreate(roundOfGolfData, {
-    individualHooks: true,
-    returning: true,
-  });
+  
 
   process.exit(0);
 };
