@@ -1,579 +1,578 @@
 [
-    {
-      "roundOfGolf_id": 1,
-      "holeNumber": 1,
-      "numberOfStrokes": 4,
-      "numberOfPutts": 1,
-      "fairwayHit": true,
-      "greenHit": false
-    },
-    {
-        "roundOfGolf_id": 1,
-        "holeNumber": 2,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": false,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 3,
-        "numberOfStrokes": 3,
-        "numberOfPutts": 1,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 4,
-        "numberOfStrokes": 5,
-        "numberOfPutts": 3,
-        "fairwayHit": false,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 5,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": false
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 6,
-        "numberOfStrokes": 6,
-        "numberOfPutts": 3,
-        "fairwayHit": false,
-        "greenHit": false
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 7,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 8,
-        "numberOfStrokes": 5,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": false
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 9,
-        "numberOfStrokes": 3,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 10,
-        "numberOfStrokes": 5,
-        "numberOfPutts": 2,
-        "fairwayHit": false,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 11,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 12,
-        "numberOfStrokes": 5,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": false
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 13,
-        "numberOfStrokes": 6,
-        "numberOfPutts": 3,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 14,
-        "numberOfStrokes": 3,
-        "numberOfPutts": 1,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 15,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 16,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 17,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 1,
-        "holeNumber": 18,
-        "numberOfStrokes": 4,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": true
-      },
-      {
-        "roundOfGolf_id": 2,
-        "holeNumber": 1,
-        "numberOfStrokes": 5,
-        "numberOfPutts": 2,
-        "fairwayHit": true,
-        "greenHit": false
-      },
-      {
-          "roundOfGolf_id": 2,
-          "holeNumber": 2,
-          "numberOfStrokes": 5,
-          "numberOfPutts": 2,
-          "fairwayHit": false,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 3,
-          "numberOfStrokes": 6,
-          "numberOfPutts": 1,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 4,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 3,
-          "fairwayHit": false,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 5,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": false
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 6,
-          "numberOfStrokes": 6,
-          "numberOfPutts": 3,
-          "fairwayHit": false,
-          "greenHit": false
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 7,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 8,
-          "numberOfStrokes": 5,
-          "numberOfPutts": 2,
-          "fairwayHit": false,
-          "greenHit": false
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 9,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 10,
-          "numberOfStrokes": 3,
-          "numberOfPutts": 2,
-          "fairwayHit": false,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 11,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 12,
-          "numberOfStrokes": 5,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": false
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 13,
-          "numberOfStrokes": 6,
-          "numberOfPutts": 3,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 14,
-          "numberOfStrokes": 3,
-          "numberOfPutts": 1,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 15,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": true
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 16,
-          "numberOfStrokes": 3,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": false
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 17,
-          "numberOfStrokes": 6,
-          "numberOfPutts": 2,
-          "fairwayHit": true,
-          "greenHit": false
-        },
-        {
-          "roundOfGolf_id": 2,
-          "holeNumber": 18,
-          "numberOfStrokes": 4,
-          "numberOfPutts": 2,
-          "fairwayHit": false,
-          "greenHit": true
-        },
-        {
-            "roundOfGolf_id": 3,
-            "holeNumber": 1,
-            "numberOfStrokes": 4,
-            "numberOfPutts": 2,
-            "fairwayHit": true,
-            "greenHit": false
-          },
-          {
-              "roundOfGolf_id": 3,
-              "holeNumber": 2,
-              "numberOfStrokes": 5,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 3,
-              "numberOfStrokes": 6,
-              "numberOfPutts": 1,
-              "fairwayHit": true,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 4,
-              "numberOfStrokes": 4,
-              "numberOfPutts": 3,
-              "fairwayHit": false,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 5,
-              "numberOfStrokes": 4,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": false
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 6,
-              "numberOfStrokes": 6,
-              "numberOfPutts": 3,
-              "fairwayHit": false,
-              "greenHit": false
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 7,
-              "numberOfStrokes": 6,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": false
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 8,
-              "numberOfStrokes": 5,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 9,
-              "numberOfStrokes": 4,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 10,
-              "numberOfStrokes": 3,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 11,
-              "numberOfStrokes": 4,
-              "numberOfPutts": 2,
-              "fairwayHit": true,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 12,
-              "numberOfStrokes": 5,
-              "numberOfPutts": 2,
-              "fairwayHit": true,
-              "greenHit": false
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 13,
-              "numberOfStrokes": 6,
-              "numberOfPutts": 3,
-              "fairwayHit": true,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 14,
-              "numberOfStrokes": 3,
-              "numberOfPutts": 1,
-              "fairwayHit": true,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 15,
-              "numberOfStrokes": 4,
-              "numberOfPutts": 2,
-              "fairwayHit": true,
-              "greenHit": true
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 16,
-              "numberOfStrokes": 3,
-              "numberOfPutts": 2,
-              "fairwayHit": true,
-              "greenHit": false
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 17,
-              "numberOfStrokes": 6,
-              "numberOfPutts": 3,
-              "fairwayHit": true,
-              "greenHit": false
-            },
-            {
-              "roundOfGolf_id": 3,
-              "holeNumber": 18,
-              "numberOfStrokes": 4,
-              "numberOfPutts": 2,
-              "fairwayHit": false,
-              "greenHit": true
-            },
-            {
-                "roundOfGolf_id": 4,
-                "holeNumber": 1,
-                "numberOfStrokes": 6,
-                "numberOfPutts": 2,
-                "fairwayHit": true,
-                "greenHit": false
-              },
-              {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 2,
-                  "numberOfStrokes": 5,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 3,
-                  "numberOfStrokes": 6,
-                  "numberOfPutts": 1,
-                  "fairwayHit": true,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 4,
-                  "numberOfStrokes": 4,
-                  "numberOfPutts": 3,
-                  "fairwayHit": false,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 5,
-                  "numberOfStrokes": 5,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": false
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 6,
-                  "numberOfStrokes": 6,
-                  "numberOfPutts": 3,
-                  "fairwayHit": false,
-                  "greenHit": false
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 7,
-                  "numberOfStrokes": 6,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": false
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 8,
-                  "numberOfStrokes": 5,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 9,
-                  "numberOfStrokes": 3,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 10,
-                  "numberOfStrokes": 3,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 11,
-                  "numberOfStrokes": 4,
-                  "numberOfPutts": 2,
-                  "fairwayHit": true,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 12,
-                  "numberOfStrokes": 5,
-                  "numberOfPutts": 2,
-                  "fairwayHit": true,
-                  "greenHit": false
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 13,
-                  "numberOfStrokes": 6,
-                  "numberOfPutts": 3,
-                  "fairwayHit": true,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 14,
-                  "numberOfStrokes": 5,
-                  "numberOfPutts": 1,
-                  "fairwayHit": true,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 15,
-                  "numberOfStrokes": 4,
-                  "numberOfPutts": 2,
-                  "fairwayHit": true,
-                  "greenHit": true
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 16,
-                  "numberOfStrokes": 3,
-                  "numberOfPutts": 2,
-                  "fairwayHit": true,
-                  "greenHit": false
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 17,
-                  "numberOfStrokes": 6,
-                  "numberOfPutts": 3,
-                  "fairwayHit": true,
-                  "greenHit": false
-                },
-                {
-                  "roundOfGolf_id": 4,
-                  "holeNumber": 18,
-                  "numberOfStrokes": 4,
-                  "numberOfPutts": 2,
-                  "fairwayHit": false,
-                  "greenHit": true
-                }
-      ]
-  
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 1,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 2,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 3,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 4,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 5,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 6,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 7,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 8,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 9,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 10,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 11,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 12,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 13,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 14,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 15,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 16,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 17,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 1,
+    "holeNumber": 18,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 1,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 2,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 3,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 4,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 5,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 6,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 7,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 8,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 9,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 10,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 11,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 12,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 13,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 14,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 15,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 16,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 17,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 2,
+    "holeNumber": 18,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 1,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 2,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 3,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 4,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 5,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 6,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 7,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 8,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 9,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 10,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 11,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 12,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 13,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 14,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 15,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 16,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 17,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 3,
+    "holeNumber": 18,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 1,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 2,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 3,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 4,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 5,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 6,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 7,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 8,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 9,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 10,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 11,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 12,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 13,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 14,
+    "numberOfStrokes": 5,
+    "numberOfPutts": 1,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 15,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": true
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 16,
+    "numberOfStrokes": 3,
+    "numberOfPutts": 2,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 17,
+    "numberOfStrokes": 6,
+    "numberOfPutts": 3,
+    "fairwayHit": true,
+    "greenHit": false
+  },
+  {
+    "roundOfGolf_id": 4,
+    "holeNumber": 18,
+    "numberOfStrokes": 4,
+    "numberOfPutts": 2,
+    "fairwayHit": false,
+    "greenHit": true
+  }
+]
