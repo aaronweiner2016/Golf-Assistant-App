@@ -1,0 +1,63 @@
+[
+    {
+    "course_name": "Northstone",
+    "par": 72,
+    "slope": 126,
+    "rating": 73.5
+    },
+    {
+    "course_name": "River Run",
+    "par": 72,
+    "slope": 128,
+    "rating": 72.5
+    },
+    {
+    "course_name": "Highland Creek",
+    "par": 72,
+    "slope": 120,
+    "rating": 71.5
+    },
+    {
+    "course_name": "Rocky River",
+    "par": 72,
+    "slope": 124,
+    "rating": 72.5
+    },
+    {
+    "course_name": "Skybrook",
+    "par": 72,
+    "slope": 122,
+    "rating": 71.5
+    },
+    {
+    "course_name": "Cabarrus Country Club",
+    "par": 72,
+    "slope": 125,
+    "rating": 72.0
+    },
+    {
+    "course_name": "Larkin",
+    "par": 72,
+    "slope": 123,
+    "rating": 71.5
+    },
+    {
+    "course_name": "Verdict Ridge",
+    "par": 72,
+    "slope": 126,
+    "rating": 73.5
+    },
+    {
+    "course_name": "Quail Hollow",
+    "par": 72,
+    "slope": 129,
+    "rating": 75.5
+    },
+    {
+    "course_name": "Olde Sycamore",
+    "par": 72,
+    "slope": 126,
+    "rating": 73.5
+    }
+
+]
