@@ -1,24 +1,28 @@
-<div class="col-md-6">
-  <h2>Signup</h2>
+<div class="row" style="width: 100%; display: flex; justify-content: center;">
+  <div class="col-md-6">
+    <div style="width: 100%; display: flex; justify-content: center;">
+      <h2>Signup</h2>
+    </div>
 
-  <form class="form signup-form">
-    <div class="form-group">
-      <label for="name-signup">name:</label>
-      <input class="form-input" type="text" id="name-signup" />
-    </div>
-    <div class="form-group">
-      <label for="email-signup">email:</label>
-      <input class="form-input" type="text" id="email-signup" />
-    </div>
-    <div class="form-group">
-      <label for="password-signup">password:</label>
-      <input class="form-input" type="password" id="password-signup" />
-    </div>
-    <div class="form-group">
-      <button class="btn btn-primary" type="submit">signup</button>
-    </div>
-  </form>
-</div>
+    <form class="form signup-form">
+      <div class="form-group" style="width: 100%; display: flex; justify-content: center;">
+        <input style="width: 300px;" placeholder="Name" class="form-input" type="text" id="name-signup" />
+      </div>
+      <div class="form-group mt-1" style="width: 100%; display: flex; justify-content: center;">
+        <input style="width: 300px;" placeholder="Email" class="form-input" type="text" id="email-signup" />
+      </div>
+      <div class="form-group mt-1" style="width: 100%; display: flex; justify-content: center;">
+        <input style="width: 300px;" placeholder="Password" class="form-input" type="password" id="password-signup" />
+      </div>
+      <div class="form-group mt-1" style="width: 100%; display: flex; justify-content: center;">
+        <button class="btn btn-primary" type="submit">signup</button>
+        <div style="width: 5px;"></div>
+        <a class="btn btn-primary" href="/login">Login</a>
+      </div>
+    </form>
+  </div>
+
 </div>
 
-<script src="./js/login.js"></script>
+
+<script src="./js/signup.js"></script>
