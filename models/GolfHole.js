@@ -1,46 +1,44 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Stats extends Model {}
+class GolfHole extends Model {}
 
-Stats.init(
+GolfHole.init(
   {
-    stats_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
+      autoIncrement: true,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
+    roundOfGolf_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
       },
-    },
-
-    score: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    putt: {
+    holeNumber: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
 
-    fairway_hit: {
-      type: DataTypes.STRING,
+    numberOfStrokes: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
-    fairway_short: {
+    numberOfPutts: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+    fairwayHit: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: false,
     },
-    fairway_short: {
+
+    greenHit: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: false,
+
     },
   },
   {
@@ -48,8 +46,8 @@ Stats.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'stats',
+    modelName: 'golfhole',
   }
 );
 
-module.exports = Stats;
+module.exports = GolfHole;
