@@ -10,9 +10,11 @@ const GolfHole = require('./GolfHole');
 //    onDelete: 'CASCADE', 
 // });
 
-User.belongsToMany(GolfCourse, {through: RoundOfGolf});
+User.belongsToMany(GolfCourse, {through: RoundOfGolf,
+foreignKey: "user_id"});
 
-GolfCourse.belongsToMany(User, {through: RoundOfGolf});
+GolfCourse.belongsToMany(User, {through: RoundOfGolf,
+foreignKey: "golfcourse_id"});
 
 // USER HAS MANY HANDICAPS
 User.hasMany(Handicap, {
