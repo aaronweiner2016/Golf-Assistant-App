@@ -25,7 +25,7 @@ RoundOfGolf.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'roundofgolf',
+    modelName: 'round',
   }
 );
 
