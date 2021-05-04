@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, GolfCourse } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -72,7 +72,11 @@ router.get('/handicap-calc', withAuth, async (req, res) => {
 
 router.get('/new-game', withAuth, async (req, res) => {
   try {
+    const courseData = await GolfCourse.findAll();
+
+    const courses = courseData.map((data) => data.get({ plain: true }));
     res.render('new-game', {
+      courses,
       name: req.session.name,
       logged_in: req.session.logged_in,
     });
