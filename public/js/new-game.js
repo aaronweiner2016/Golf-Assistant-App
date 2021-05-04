@@ -36,38 +36,32 @@ holeNumber.innerHTML = holeNum;
 nextHole.addEventListener('click', async () => {
     var score = document.querySelector('#score').value
     var putts = document.querySelector('#putts').value
-    var fairway = document.querySelector('#fairway').value
-    var greenCheck = document.querySelector('#greenCheck').value
+    var fairway = document.querySelector('#fairway').checked
+    var greenCheck = document.querySelector('#greenCheck').checked
 
-    console.log(fairway)
 
-    // if (fairway === 'on') {
-    //     fairway = 1;
-    // } else {
-    //     fairway = 0;
-    // }
+    if (selectedCourse) {
+        const response = await fetch('api/holes', {
+            method: 'POST',
+            body: JSON.stringify({ holeNumber: holeNum, numberOfPutts: putts, numberOfStrokes: score, fairwayHit: fairway, greenHit: greenCheck }),
+            headers: { 'Content-Type': 'application/json' },
+        })
+        if (response.ok) {
+            console.log("good to go")
+        } else {
+            alert("failed")
+        }
+    }
 
-    // if (greenCheck === 'on') {
-    //     greenCheck = 1;
-    // } else {
-    //     greenCheck = 0;
-    // }
-
-    console.log(fairway)
-    console.log(greenCheck)
-
-    // console.log(fairWay)
-    console.log(greenCheck)
-    // if (selectedCourse) {
-    //     const response = await fetch('api/holes', {
-    //         method: 'POST',
-    //         body: JSON.stringify({ round_of_golf_id: activeRound, }),
-    //         headers: { 'Content-Type': 'application/json' },
-    //     })
-    // }
 
     holeNum++;
     holeNumber.innerHTML = holeNum;
+
+    document.querySelector('#score').value = "";
+    document.querySelector('#putts').value = "";
+    document.querySelector('#fairway').checked
+    document.querySelector('#greenCheck').checked
+
 
     if (holeNum === 19) {
         roundGolf.classList.add('hide')

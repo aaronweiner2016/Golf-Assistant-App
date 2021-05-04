@@ -8,6 +8,7 @@ router.post('/:id', async (req, res) => {
 
         req.session.activeRoundId = roundOfGolf.id;
         const activeRound = req.session.activeRoundId;
+        console.log(activeRound)
         res.send("hello")
     } catch (err) {
         console.error(err);

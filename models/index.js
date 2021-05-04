@@ -24,12 +24,13 @@ GolfCourse.belongsToMany(User, {
 User.hasMany(Handicap, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
-
 });
+
+GolfHole.belongsTo(RoundOfGolf)
 
 // A ROUND OF GOLF HAS MANY GOLF HOLES
 RoundOfGolf.hasMany(GolfHole, {
-  foreignKey: 'roundOfGolf_id',
+  foreignKey: 'round_id',
   onDelete: 'CASCADE',
 });
 
