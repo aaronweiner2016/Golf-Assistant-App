@@ -62,13 +62,15 @@ nextHole.addEventListener('click', async () => {
     document.querySelector('#fairway').checked
     document.querySelector('#greenCheck').checked
 
+    if (holeNum === 10) {
+        nextHole.innerHTML = "Finish Game"
+    }
 
-    if (holeNum === 19) {
-        roundGolf.classList.add('hide')
-        scoreCard.classList.remove('hide')
+    if (holeNum === 4) {
+        document.location.replace('/score-card');
     }
 })
 
-home.addEventListener('click', () => {
-    document.location.replace('/');
-})
+// home.addEventListener('click', () => {
+//     document.location.replace('/');
+// })
