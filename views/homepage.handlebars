@@ -2,21 +2,23 @@
 
     <div class="d-flex flex-column align-items-center" style="width: 50%; height: 500px; border-right: 1px solid black">
         <h1>Handicap</h1>
-        <h3>10</h3>
+        <h3 id="handicap">{{handicap}}</h3>
         <h1>Start new round</h1>
         <a href="/new-game" class="btn btn-primary" style="text-decoration: none; max-width: 150px; width: 100%;">New
             Game</a>
     </div>
     <div class="d-flex flex-column align-items-center" style="width: 50%; height: 500px;">
         <h1>Score History</h1>
+        {{#each hole as |golfhole|}}
         <a href="#" class="card mb-2" style="text-decoration: none; color: black; max-width: 400px; width: 100%;">
             <div class="card-header">
                 <span class="d-flex justify-content-between">
-                    <span>Country Club #1</span>
-                    <span>100</span>
-                    <span>Time/Date</span>
+                    <span>{{roundofgolf.golfcourse.name}}</span>
+                    <span>{{sumScore}}</span>
+                    <span>{{roundofgolf.date_played}}</span>
                 </span>
             </div>
         </a>
+        {{/each}}
     </div>
 </section>
