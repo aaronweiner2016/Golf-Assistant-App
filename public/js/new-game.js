@@ -62,11 +62,11 @@ nextHole.addEventListener('click', async () => {
     document.querySelector('#fairway').checked
     document.querySelector('#greenCheck').checked
 
-    if (holeNum === 1) {
+    if (holeNum === 10) {
         nextHole.innerHTML = "Finish Game"
     }
 
-    if (holeNum === 2) {
+    if (holeNum === 4) {
         document.location.replace('/score-card');
     }
 })

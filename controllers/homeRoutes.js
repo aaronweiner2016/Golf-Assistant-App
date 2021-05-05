@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, GolfCourse } = require('../models');
+const { User, GolfCourse, GolfHole } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -88,8 +88,22 @@ router.get('/new-game', withAuth, async (req, res) => {
 
 router.get('/score-card', withAuth, async (req, res) => {
   try {
+    const activeRound = req.session.activeRoundId;
+    let scoreData = await GolfHole.findAll({ where: { round_id: activeRound } })
+
+    let sumScore = 0;
+    for (var i = 0; i < 3; i++) {
+      sumScore += scoreData[i].numberOfStrokes
+    }
+
+    let sumPutts = 0;
+    for (var i = 0; i < 3; i++) {
+      sumPutts += scoreData[i].numberOfPutts
+    }
 
     res.render('score-card', {
+      sumPutts,
+      sumScore,
       name: req.session.name,
       logged_in: req.session.logged_in,
     });
