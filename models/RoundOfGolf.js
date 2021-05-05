@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class RoundOfGolf extends Model {}
+class RoundOfGolf extends Model { }
 
 RoundOfGolf.init(
   {
@@ -11,13 +11,21 @@ RoundOfGolf.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    },
+    // roundOfGolf_id: {
+    //   type: DataTypes.INTEGER,
+    //   unique: false,
+    // },
+    // user_id: {
+    //   type: DataTypes.INTEGER,
+    //   unique: false,
+    // }
+  },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'roundofgolf',
+    modelName: 'round',
   }
 );
 

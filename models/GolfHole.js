@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class GolfHole extends Model {}
+class GolfHole extends Model { }
 
 GolfHole.init(
   {
@@ -11,10 +11,10 @@ GolfHole.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    roundOfGolf_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+    // roundOfGolf_id: {
+    //     type: DataTypes.INTEGER,
+    //     allowNull: false,
+    //   },
     holeNumber: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -25,9 +25,9 @@ GolfHole.init(
       allowNull: false,
     },
     numberOfPutts: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     fairwayHit: {
       type: DataTypes.BOOLEAN,
       allowNull: false,

@@ -1,35 +1,61 @@
 <div style="width: 100%; display: flex; justify-content: center;">
-    <div class="card text-center">
+
+    <div id="new-game">
         <div class="card-header">
-            Hole: 1
+            Select a golf course
+        </div>
+        <div class="card-body d-flex flex-column">
+
+            <select id="select-course" class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                {{#each courses as |course|}}
+
+                <option value="{{course.id}}">{{course.course_name}}</option>
+
+                {{/each}}
+            </select>
+
+        </div>
+        <div class="card-footer text-muted">
+            <button class="start-round" class="btn btn-primary">Start Round</button>
+        </div>
+    </div>
+
+    <div class="hide" class="card text-center" id="round-golf">
+        <div class="card-header">
+            Hole:<span id="hole-number"></span>
         </div>
         <div class="card-body d-flex flex-column">
             <div class="d-flex flex-row align-items-center">
                 {{!-- <h5>Score</h5> --}}
-                <input placeholder="Score" class="m-2">
+                <input id="score" placeholder="Score" class="m-2">
             </div>
 
             <div class="d-flex flex-row align-items-center">
                 {{!-- <h5>Putts</h5> --}}
-                <input placeholder="Putts" class="m-2">
+                <input id="putts" placeholder="Putts" class="m-2">
             </div>
 
             <div class="form-check">
-                <label class="form-check-label" for="fairwayCheck">
-                    Fairway Hits
-                </label>
-                <input class="form-check-input" type="checkbox" name="fairwayCheck" id="fairwayCheck">
+                <div class="bootstrap-switch-square">
+                    <label class="form-check-label" for="fairwayCheck">
+                        Fairway Hits
+                    </label>
+                    <input id="fairway" type="checkbox" data-toggle="switch" name="Resend" id="Resend" value="true" />
+                </div>
             </div>
 
             <div class="form-check">
                 <label class="form-check-label" for="greenCheck">
                     Green in Regulation
                 </label>
-                <input class="form-check-input" type="checkbox" name="greenCheck" id="greenCheck1">
+                <input id="greenCheck" type="checkbox" data-toggle="switch" name="Resend" id="Resend" value="true" />
             </div>
         </div>
         <div class="card-footer text-muted">
-            <button class="btn btn-primary">Next Hole</button>
+            <button class="next-hole">Next Hole</button>
         </div>
     </div>
 </div>
+
+<script src="./js/new-game.js"></script>
