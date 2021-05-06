@@ -35,9 +35,9 @@ User.init(
         len: [8],
       },
     },
-   
+
   },
-  
+
   {
     hooks: {
       beforeCreate: async (newUserData) => {
@@ -46,7 +46,7 @@ User.init(
       },
     },
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'user',

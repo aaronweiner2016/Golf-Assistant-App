@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Handicap extends Model {}
+class Handicap extends Model { }
 
 Handicap.init(
   {
@@ -15,19 +15,19 @@ Handicap.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model:'user',
-        key:'id',
+        model: 'user',
+        key: 'id',
       }
     },
     handicap_value: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+      type: DataTypes.INTEGER,
+      allowNull: false,
     }
-    
+
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'handicap',
