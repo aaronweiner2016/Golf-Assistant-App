@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class GolfCourse extends Model {}
+class GolfCourse extends Model { }
 
 GolfCourse.init(
   {
@@ -32,7 +32,7 @@ GolfCourse.init(
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'golfcourse',
