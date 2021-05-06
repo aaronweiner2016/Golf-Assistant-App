@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    min-height: 20px;
+    max-height: 80px;
+    padding-top: 0;
+}
+
+.navbar {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+    padding-bottom: 0.2rem;
+    background-color: black;
+    z-index: 999;
+}
+
+.nav-logo {
+    width: 120px;
+    padding-left: 1rem;
+}
+
+.hamburger {
+    display: none;
+    visibility: hidden;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    display: inline-block;
+    padding-left: 4px;
+    padding-bottom: 1.5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.menu-container .navbar {
+    display: none;
+  }
+  .menu-container:focus-within .navbar {
+    display: block;
+  }
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    li {
+        list-style: initial;
+    }
+    .hamburger {
+        visibility: visible;
+        font-size: 20px;
+        color:white;
+        background-color: black;
+        border-radius: 0.6rem;
+        border-color: black;
+    }
+    .hamburger.active .bar:nth-child(2) {
+         opacity: 0;
+    }      
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }      
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+} 
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: black;
+        border-color: black;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: #fff;
+    }
+    .btn:hover {
+        background-color: #BDC581;
+        border-color: #BDC581;
+    }
+    .dropdown-menu {
+        position: relative;
+        background-color: black;
+        color: #fff;
+        z-index: 1;
+    }
