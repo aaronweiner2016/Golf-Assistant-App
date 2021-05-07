@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 
-nav {
+/* nav {
     height: 60px;
     fill-opacity: 0.6;
     background-color: black;
@@ -9,8 +9,8 @@ nav {
     border: none;
     overflow: hidden;
     
-}
-.nav-link {
+} */
+/* .nav-link {
  color: blanchedalmond;
 }
 .btn {
@@ -27,8 +27,8 @@ nav {
     background-color: black;
     color: #fff;
     z-index: 3;
-}
-
+} */
+/* 
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
@@ -157,8 +157,8 @@ nav {
     .navbar-toggler {
       float: right;
       display: block;
-    }
-  } */
+
+
 
   section {
     position: relative;
@@ -209,3 +209,10 @@ nav {
     } */
   }
 
+.videoSection {
+  margin-top: -3rem;
+}
+
+div .flex-column {
+  margin-top: 2rem;
+}

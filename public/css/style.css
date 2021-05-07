@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -35,6 +35,7 @@ a {
 .nav-logo {
     width: 120px;
     padding-left: 1rem;
+    vertical-align: middle;
 }
 
 .hamburger {
@@ -53,10 +54,11 @@ a {
 }
 
 .nav-item {
+    font-family: 'Open Sans Condensed', sans-serif;
     margin-left: 5rem;
     display: inline-block;
-    padding-left: 3rem;
-    padding-bottom: 1.5rem;
+    align-items: stretch;
+    /* padding-bottom: 1.5rem; */
 }
 
 .nav-link{
@@ -148,3 +150,5 @@ a {
     .dropdown {
         margin-left: 16rem;
     }
+
+    /* STATS PAGE BAR CHARTS */
