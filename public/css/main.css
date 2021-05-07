@@ -212,3 +212,7 @@
 .videoSection {
   margin-top: -3rem;
 }
+
+div .flex-column {
+  margin-top: 2rem;
+}
