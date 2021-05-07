@@ -6,9 +6,7 @@ router.post('/', async (req, res) => {
         const activeRound = req.session.activeRoundId;
         console.log(req.session)
         const hole = await GolfHole.create({ ...req.body, roundId: activeRound }, { include: RoundOfGolf });
-        // const round = await RoundOfGolf.findByPk(activeRound);
 
-        // hole.addRoundOfGolf(round);
         console.log(hole)
         res.send("hello")
     } catch (err) {
