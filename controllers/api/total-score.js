@@ -1,13 +1,26 @@
-const { Stats, RoundOfGolf } = require('../../models')
+const { Stats, RoundOfGolf, GolfCourse, GolfHole, Handicap } = require('../../models')
 const router = require('express').Router()
 
 
 router.post('/', async (req, res) => {
     try {
         const activeRound = req.session.activeRoundId;
-        console.log("SESSION", req.session.created_at)
         const stats = await Stats.create({ ...req.body, roundId: activeRound, userId: req.session.user_id }, { include: RoundOfGolf });
-        console.log(stats)
+
+        const golfCourse = await GolfCourse.findOne({
+            where: req.session.activeCourseId,
+            raw: true
+        })
+
+        console.log(golfCourse.course_name);
+        console.log(req.body.totalScore)
+        const handicapVal = req.body.totalScore - golfCourse.rating * 113 / golfCourse.slope
+        console.log(handicapVal)
+        const handicap = await Handicap.create({
+            user_id: req.session.user_id,
+            handicap_value: handicapVal
+        });
+
         res.send("hello")
     } catch (err) {
         console.error(err);

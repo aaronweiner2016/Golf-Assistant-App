@@ -6,6 +6,7 @@ router.post('/:id', async (req, res) => {
         console.log(typeof req.params.id);
         const roundOfGolf = await RoundOfGolf.create({ user_id: req.session.user_id, golfcourse_id: parseInt(req.params.id) });
 
+        req.session.activeGolfCourseId = parseInt(req.params.id);
         req.session.activeRoundId = roundOfGolf.id;
         const activeRound = req.session.activeRoundId;
         console.log(activeRound)
