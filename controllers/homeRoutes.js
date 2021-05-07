@@ -55,17 +55,6 @@ router.get('/sign-up', async (req, res) => {
   });
 });
 
-router.get('/post-score', withAuth, async (req, res) => {
-  try {
-    res.render('post-score', {
-      name: req.session.name,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 router.get('/stats', withAuth, async (req, res) => {
   try {
     res.render('stats', {
