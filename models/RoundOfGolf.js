@@ -11,14 +11,6 @@ RoundOfGolf.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // roundOfGolf_id: {
-    //   type: DataTypes.INTEGER,
-    //   unique: false,
-    // },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   unique: false,
-    // }
   },
   {
     sequelize,

@@ -4,10 +4,6 @@ homeBtn.addEventListener('click', async () => {
     var score = document.getElementById('score').textContent.trim();
     var putts = document.getElementById('putts').textContent.trim();
 
-
-    console.log(score)
-    console.log(putts)
-
     if (score && putts) {
         const response = await fetch('api/stats', {
             method: 'POST',
@@ -20,5 +16,5 @@ homeBtn.addEventListener('click', async () => {
             alert("failed")
         }
     }
-    // document.location.replace('/');
+
 })
