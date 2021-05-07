@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
             raw: true
         })
 
-        console.log(golfCourse);
+        console.log(golfCourse.course_name);
         console.log(req.body.totalScore)
         const handicapVal = req.body.totalScore - golfCourse.rating * 113 / golfCourse.slope
         console.log(handicapVal)

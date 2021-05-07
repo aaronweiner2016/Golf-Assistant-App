@@ -22,7 +22,13 @@ router.get('/', withAuth, async (req, res) => {
     let statsData = await Stats.findAll({ where: { user_id: req.session.user_id } })
     const stats = statsData.map((data) => data.get({ plain: true }))
 
+    const golfCourse = await GolfCourse.findOne({
+      where: req.session.activeCourseId,
+      raw: true
+    })
+
     res.render('homepage', {
+      golfCourse,
       stats,
       users,
       handicap,
