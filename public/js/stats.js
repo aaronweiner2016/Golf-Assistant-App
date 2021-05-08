@@ -1,11 +1,5 @@
-// const { json } = require("sequelize/types");
-
-// const { response } = require("express");
-
-google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawBasic);
-
-
+let golfData
+google.charts.load('current', { packages: ['corechart', 'bar'] });
 
 async function apiCall() {
   const response = await fetch('/api/stats', {
@@ -13,75 +7,81 @@ async function apiCall() {
     headers: { 'Content-Type': 'application/json' },
   })
 
-  const data = await response.json();
-  console.log('data', data)
+  golfData = await response.json();
+  google.charts.setOnLoadCallback(drawBasic);
 }
 apiCall()
 
-// fetch('/stats')
-//   .then(response => response)
-//   .then(data => console.log(data))
+function formatDate(dateToFormat) {
+  const d = new Date(dateToFormat)
+  const day = d.getDay()+1
+  const month = d.getMonth()+1
+  const year = d.getFullYear()
+  return `${month}/${day}/${year}`
+}
+
 function drawBasic() {
+  const chartData = [['Date', 'Score', { role: 'style' }]]
 
-      var data = google.visualization.arrayToDataTable([
-        ['Date', 'Score',{ role: 'style' }],
-        ['05/07/2021', 90, 'color: #BDC581'],
-        ['05/08/2021', 100,'color: #BDC581' ],
-        ['05/09/2021', 110,'color: #BDC581' ],
-        ['05/10/2021', 85,'color: #BDC581' ],
-        ['05/11/2021', 94,'color: #BDC581' ]
-      ]);
+  golfData.forEach(el => {
+    const { createdAt, totalScore } = el
+    const color = totalScore > 50 ? '#4ea64e': '#BDC581';
+    chartData.push([formatDate(createdAt), totalScore, `color: ${color}`])
+  });
 
-      var options = {
-        title: '',
-        chartArea: {width: '50%'},
-        hAxis: {
-          title: 'Scores',
-          minValue: 0
-        },
-        vAxis: {
-          title: 'Dates'
-        },
-        colors: ['#BDC581'],
-        backgroundColor: 'transparent'
-      };
+  const data = google.visualization.arrayToDataTable(chartData);
 
-      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+  const options = {
+    title: '',
+    chartArea: { width: '50%' },
+    hAxis: {
+      title: 'Scores',
+      minValue: 0
+    },
+    vAxis: {
+      title: 'Dates'
+    },
+    colors: ['#BDC581'],
+    backgroundColor: 'transparent'
+  };
 
-      chart.draw(data, options);
-    }
+  const chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
-google.charts.load('current', {packages: ['corechart', 'bar']});
+  chart.draw(data, options);
+}
+
+google.charts.load('current', { packages: ['corechart', 'bar'] });
 google.charts.setOnLoadCallback(drawBasicAp);
 
 function drawBasicAp() {
 
-      var dataAp = google.visualization.arrayToDataTable([
-        ['Date', 'Score',{ role: 'style' }],
-        ['05/07/2021', 39, 'color: #BDC581'],
-        ['05/08/2021', 20,'color: #BDC581' ],
-        ['05/09/2021', 27,'color: #BDC581' ],
-        ['05/10/2021', 22,'color: #BDC581' ],
-        ['05/11/2021',34,'color: #BDC581' ]
-      ]);
+  const chartData = [['Date', 'Score', { role: 'style' }]]
+  golfData.forEach(el => {
+    const { createdAt, totalPutts } = el
+    const color = totalPutts > 50 ? '#567856': '#BDC581';
 
-      var optionsAp = {
-        title: '',
-        chartArea: {width: '50%'},
-        hAxis: {
-          title: 'Scores',
-          minValue: 0,
-          
-        },
-        vAxis: {
-          title: 'Dates'
-        },
-        colors: ['#BDC581'],
-        backgroundColor: 'transparent'
-      };
-      
+    chartData.push([formatDate(createdAt), totalPutts, `color: ${color}`])
+  });
 
-      var chartAp = new google.visualization.BarChart(document.getElementById('chartAp_div'));
+  const dataAp = google.visualization.arrayToDataTable(chartData);
 
-      chartAp.draw(dataAp, optionsAp);
-    }
+  const optionsAp = {
+    title: '',
+    chartArea: { width: '50%' },
+    hAxis: {
+      title: 'Scores',
+      minValue: 0,
+
+    },
+    vAxis: {
+      title: 'Dates'
+    },
+    colors: ['#BDC581'],
+    backgroundColor: 'transparent'
+  };
+
+
+  const chartAp = new google.visualization.BarChart(document.getElementById('chartAp_div'));
+
+  chartAp.draw(dataAp, optionsAp);
+}

@@ -1,50 +1,53 @@
-<h1 class="statsHead">Golf Games</h1>
-<div>
-    <h2>Quota Game</h2>
-    <p>
+
+<div class="golfGamesSection">
+    <br/>
+    <br/>
+    <h1 class="statsHead">Golf Games</h1>
+    <br/>
+    <h3>Quota Game</h3>
+    <p class="golfp"> 
     Quota is a fun game that allows players of all ability to play against each other.
      A quota is calculated based on a players handicap (see below to calculate a quota for each member of your group). 
      Players user stableford scoring to try and score higher than their quota. 
      The player to score the most points over their quota is the winner. 
      </p> 
     {{!-- scoring game section --}}
-<h2>Scoring Game</h2>
-<p>
-    <ul>
-       <li>Eagle – 8 points</li>
+<h3>Scoring Game</h3>
+<div class="golfp">
+    <ul >
+       <li class="">Eagle – 8 points</li>
        <li>Birdie – 4 points</li>
        <li>Par – 2 points</li>
        <li>Bogey – 1 point</li>
        <li>All others – 0 points</li>
     </ul>
-</p>
 </div>
-
 <div>
     {{!-- handicap is supposed to be entered in here , the second column could be for quota--}}
-    <form action="">
-    <label for="fname">Player 1:</label>
-        <input type="text" id="p1hc" name="fname" placeholder="Enter Handicap"> 
-        <input type="text" id="p1quota" name="quota">
-        <br>
-        <br>
-    <label for="lname">Player 2:</label>
-        <input type="text" id="p2hc" name="lname" placeholder="Enter Handicap">
-        <input type="text" id="p2quota" name="quota">
-        <br>
-        <br>
+  <h3 class="hcqtahdr">Handicap    |    Calculated Quota</h3> 
+    <form class="handicapForm" action="">
+        <div class="inputSection">
+            <label for="fname">Player 1:</label>
+            <input type="text" id="p1hc" name="fname" placeholder="Enter Handicap"> 
+            <input type="text" id="p1quota" name="quota">
+        </div>
+            <br/> 
+        <label for="lname">Player 2:</label>
+            <input class="textInput" type="text" id="p2hc" name="lname" placeholder="Enter Handicap">
+            <input class="displayInput" type="text" id="p2quota" name="quota">
+            <br/> 
         <label for="fname">Player 3:</label>
-        <input type="text" id="p3hc" name="fname" placeholder="Enter Handicap">
-        <input type="text" id="p3quota" name="quota">
-        <br>
-        <br>
-    <label for="lname">Player 4:</label>
-        <input type="text" id="p4hc" name="lname" placeholder="Enter Handicap">
-        <input type="text" id="p4quota" name="quota">
-        <br>
-        <button id="btnqta" class="btnqta" type="submit">Get Your Quota</button>
+            <input type="text" id="p3hc" name="fname" placeholder="Enter Handicap">
+            <input type="text" id="p3quota" name="quota">
+            <br/> 
+        <label for="lname">Player 4:</label>
+            <input type="text" id="p4hc" name="lname" placeholder="Enter Handicap">
+            <input type="text" id="p4quota" name="quota">
+            <br/> 
+        <button id="btnqta" class="btnqta btn btn-primary" type="submit">Get Your Quota</button>
     </form>
 </div>
 <br>
 <br>
 <br>
+</div>
