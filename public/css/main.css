@@ -42,17 +42,11 @@
     section {
       background: url('/mov/loginpg.mov') black no-repeat center center scroll;
     }
-<<<<<<< HEAD
-    section video {
-=======
      section video {
->>>>>>> e4548e3 (stats)
       display: none;
     } 
   }
 
-<<<<<<< HEAD
-=======
   @media screen and (max-width: 1050px){
     #flex-column {
       display: flex;
@@ -60,4 +54,3 @@
     }
   }
 
->>>>>>> e4548e3 (stats)
