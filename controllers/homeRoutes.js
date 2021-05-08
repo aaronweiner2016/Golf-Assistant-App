@@ -17,16 +17,21 @@ router.get('/', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       order: [['name', 'ASC']],
     });
-
     const users = userData;
-    let statsData = await Stats.findAll({ where: { user_id: req.session.user_id } })
+    let statsData = await Stats.findAll({
+      where: { user_id: req.session.user_id },
+      include: [{
+        model: RoundOfGolf,
+        include: [{
+          model: GolfCourse
+        }]
+      }]
+    })
     const stats = statsData.map((data) => data.get({ plain: true }))
-
     const golfCourse = await GolfCourse.findOne({
       where: req.session.activeCourseId,
       raw: true
     })
-
     res.render('homepage', {
       golfCourse,
       stats,
@@ -109,7 +114,27 @@ router.get('/score-card', withAuth, async (req, res) => {
       sumPutts += scoreData[i].numberOfPutts
     }
 
+    let sumFairway = 0;
+
+
+    for (var i = 0; i < 3; i++) {
+      if (scoreData[i].fairwayHit) {
+        sumFairway++;
+      }
+    }
+
+    let sumGreen = 0;
+
+    for (var i = 0; i < 3; i++) {
+      if (scoreData[i].greenHit) {
+        sumGreen++;
+      }
+    }
+
+
     res.render('score-card', {
+      sumGreen,
+      sumFairway,
       sumPutts,
       sumScore,
       name: req.session.name,
@@ -118,6 +143,7 @@ router.get('/score-card', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
+})
+
 
 module.exports = router;

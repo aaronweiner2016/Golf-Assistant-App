@@ -1,5 +1,3 @@
-
-
   section {
     position: relative;
     height: 100vh;
@@ -44,35 +42,15 @@
     section {
       background: url('/mov/loginpg.mov') black no-repeat center center scroll;
     }
-    /* section video {
+     section video {
       display: none;
-    } */
+    } 
   }
-.videoSection {
-  margin-top: -3rem;
-}
 
-div .flex-column {
-  margin-top: 2rem;
-}
-
-#chart_div,
-#chartAp_div {
-  display: flex;
-  width: 70%;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  
-}
-.statsHead {
-  margin-top: 2rem;
-  text-decoration: underline;
-}
-.statsSection {
-  text-align: center;
-  background-image: url('/images/stats.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -3.1rem;
-}
+  @media screen and (max-width: 1050px){
+    #flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 

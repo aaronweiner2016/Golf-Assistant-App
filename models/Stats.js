@@ -19,6 +19,14 @@ Stats.init(
         totalPutts: {
             type: DataTypes.INTEGER,
             allowNull: false,
+        },
+        totalFairway: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        totalGreen: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
         }
     },
     {

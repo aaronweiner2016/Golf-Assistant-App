@@ -39,6 +39,8 @@ nextHole.addEventListener('click', async () => {
     var fairway = document.querySelector('#fairway').checked
     var greenCheck = document.querySelector('#greenCheck').checked
 
+    console.log(fairway)
+
 
     if (selectedCourse) {
         const response = await fetch('api/holes', {
@@ -70,8 +72,8 @@ nextHole.addEventListener('click', async () => {
     //         }
     //     }
     // }
-    document.querySelector('#fairway').checked
-    document.querySelector('#greenCheck').checked
+    document.querySelector('#fairway').checked = false;
+    document.querySelector('#greenCheck').checked = false;
 
     if (holeNum === 10) {
         nextHole.innerHTML = "Finish Game"
