@@ -108,7 +108,27 @@ router.get('/score-card', withAuth, async (req, res) => {
       sumPutts += scoreData[i].numberOfPutts
     }
 
+    let sumFairway = 0;
+   
+      
+      for (var i=0; i<3; i++) {   
+         if (scoreData[i].fairwayHit = true){
+            sumFairway ++;
+          }
+        }
+
+        let sumGreen = 0;
+        
+        for (var i=0; i<3; i++) {   
+          if (scoreData[i].greenHit = true){
+             sumGreen ++;
+           }
+         }
+   
+
     res.render('score-card', {
+      sumGreen,
+      sumFairway,
       sumPutts,
       sumScore,
       name: req.session.name,
@@ -117,6 +137,7 @@ router.get('/score-card', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
+})
+
 
 module.exports = router;
