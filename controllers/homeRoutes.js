@@ -19,9 +19,17 @@ router.get('/', withAuth, async (req, res) => {
     });
 
     const users = userData;
-    let statsData = await Stats.findAll({ where: { user_id: req.session.user_id } })
+    let statsData = await Stats.findAll({ 
+      where: { user_id: req.session.user_id },
+      include: [{
+        model: RoundOfGolf,
+        include: [{
+          model: GolfCourse
+        }]
+      }]
+     })
     const stats = statsData.map((data) => data.get({ plain: true }))
-
+    console.log(stats[0].round)
     const golfCourse = await GolfCourse.findOne({
       where: req.session.activeCourseId,
       raw: true
@@ -108,19 +116,21 @@ router.get('/score-card', withAuth, async (req, res) => {
       sumPutts += scoreData[i].numberOfPutts
     }
 
-    let sumFairway = 0;
+    var fairway = document.getElementById("fairway"),
+    sumFairway = 0;
    
       
       for (var i=0; i<3; i++) {   
-         if (scoreData[i].fairwayHit = true){
-            sumFairway ++;
+         if (fairway[i].type == "checkbox" && fairway[i].checked == true){
+            sumFairway++;
+            console.log("fairway", sumFairway)
           }
         }
 
         let sumGreen = 0;
-        
+
         for (var i=0; i<3; i++) {   
-          if (scoreData[i].greenHit = true){
+          if (scoreData[i].greenHit.checked = true){
              sumGreen ++;
            }
          }
