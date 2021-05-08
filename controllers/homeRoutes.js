@@ -116,25 +116,23 @@ router.get('/score-card', withAuth, async (req, res) => {
       sumPutts += scoreData[i].numberOfPutts
     }
 
-    var fairway = document.getElementById("fairway"),
-    sumFairway = 0;
-   
-      
-      for (var i=0; i<3; i++) {   
-         if (fairway[i].type == "checkbox" && fairway[i].checked == true){
-            sumFairway++;
-            console.log("fairway", sumFairway)
-          }
-        }
+    let sumFairway = 0;
 
-        let sumGreen = 0;
 
-        for (var i=0; i<3; i++) {   
-          if (scoreData[i].greenHit.checked = true){
-             sumGreen ++;
-           }
-         }
-   
+    for (var i = 0; i < 3; i++) {
+      if (scoreData[i].fairwayHit) {
+        sumFairway++;
+      }
+    }
+
+    let sumGreen = 0;
+
+    for (var i = 0; i < 3; i++) {
+      if (scoreData[i].greenHit) {
+        sumGreen++;
+      }
+    }
+
 
     res.render('score-card', {
       sumGreen,
