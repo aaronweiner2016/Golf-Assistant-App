@@ -26,10 +26,10 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="nav-logo"><img src="/images/golfers.png" alt="" class="nav-logo"></a>
+            <a href="/" class="nav-logo"><img src="/images/golfers.png" alt="" class="nav-logo"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="/new-game" class="nav-link">Post Score</a>
+                    <a href="/" class="nav-link">Post Score</a>
                 </li>
                 <li class="nav-item">
                     <a href="/stats" class="nav-link">Stats</a>
@@ -38,50 +38,53 @@
                     <a href="/handicap-calc" class="nav-link">Golf Games</a>
                 </li>
             </ul>
-              {{#if logged_in}}
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        {{ name }}
-                    </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li class="nav-item logout">
-                            <a class="" id="logout" href="/login" style="font-size: 25px;">Logout</a>
-                        </li>
-                    </ul>
-                </div>
+            {{#if logged_in}}
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ name }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link" id="logout" href="/login" style="font-size: 25px;">Logout</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        {{time}}
+                    </li>
+                </ul>
+            </div>
             <div class="menu-container">
-                 {{!-- <div class="dropdown">
+                {{!-- <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         {{ name }}
                     </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li class="nav-item" style="margin-right: 30px;">
                             <a class="nav-link" id="logout" href="/login" style="font-size: 25px;">Logout</a>
                         </li>
                     </ul>
                 </div> --}}
                 <button type="button" class="hamburger" data-toggle="collapse">☰</button>
-              </div>
-        </nav>
-</header>
- {{!-- <script src="/js/main.js"></script>    --}}
-                {{else}}
-                {{!-- <div class="dropdown" style="margin-right: 30px;">
-                    <a class="btn btn-secondary dropdown-toggle" href="/login" role="button" id="dropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Log In
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li class="nav-item" style="margin-right: 30px;">
-                            <a class="nav-link" href="/login" style="font-size: 15px;">Log In</a>
-                        </li>
-                    </ul>
-                </div> --}}
-                {{/if}}
             </div>
-        </div>
+        </nav>
+    </header>
+    <script src="/js/main.js"></script>
+    {{else}}
+    <div class="dropdown" style="margin-right: 30px;">
+        <a class="btn btn-secondary dropdown-toggle" href="/login" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Log In
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li class="nav-item" style="margin-right: 30px;">
+                <a class="nav-link" href="/login" style="font-size: 15px;">Log In</a>
+            </li>
+        </ul>
+    </div>
+    {{/if}}
+    </div>
+    </div>
     </nav>
     <div class="flex-column justify-space-around">
         <header class="display-flex justify-space-between align-center">
@@ -93,8 +96,8 @@
         </footer>
     </div>
     {{#if logged_in}}
-<script src="/js/golfgames.js"></script>
-<script src="/js/main.js"></script>
+    <script src="/js/golfgames.js"></script>
+    <script src="/js/main.js"></script>
     <script src="/js/logout.js"></script>
     {{/if}}
 </body>

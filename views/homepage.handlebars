@@ -4,18 +4,18 @@
         <h1>Handicap</h1>
         <h3 id="handicap">{{handicap}}</h3>
         <h1>Start new round</h1>
-        <a href="/new-game" class="btn btn-primary" style="text-decoration: none; max-width: 150px; width: 100%;">New
-            Game</a>
+        <a href="/new-game" class="btn btn-primary" style="text-decoration: none; max-width: 150px; width: 100%;">Post
+            Score</a>
     </div>
-    <div class="d-flex flex-column align-items-center" style="width: 50%; height: 500px;">
+    <div class="d-flex flex-column align-items-center" style="width: 50%; height: 100%;">
         <h1>Score History</h1>
-        {{#each hole as |golfhole|}}
+        {{#each stats as |stat|}}
         <a href="#" class="card mb-2" style="text-decoration: none; color: black; max-width: 400px; width: 100%;">
             <div class="card-header">
                 <span class="d-flex justify-content-between">
-                    <span>{{roundofgolf.golfcourse.name}}</span>
-                    <span>{{sumScore}}</span>
-                    <span>{{roundofgolf.date_played}}</span>
+                    <span>Score: {{stat.totalScore}}</span>
+                    <span>Putts: {{stat.totalPutts}}</span>
+                    <span>{{format_date stat.createdAt}}</span>
                 </span>
             </div>
         </a>

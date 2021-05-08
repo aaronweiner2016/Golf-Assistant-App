@@ -2,18 +2,16 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { User, GolfCourse, RoundOfGolf, Handicap, GolfHole, Stats } = require('../models');
 const withAuth = require('../utils/auth');
-// const connection = require('../config/connection')
 
 router.get('/', withAuth, async (req, res) => {
   try {
     const handicapQuery = `SELECT AVG(handicap_value) FROM handicap where user_id = ${req.session.user_id}`;
-   
+
     const handicapData = await sequelize.query(handicapQuery, {
       type: sequelize.QueryTypes.SELECT
     });
 
     const handicap = Math.round(handicapData[0]['AVG(handicap_value)']).toFixed(1);
-    
 
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
@@ -21,8 +19,17 @@ router.get('/', withAuth, async (req, res) => {
     });
 
     const users = userData;
-  
+    let statsData = await Stats.findAll({ where: { user_id: req.session.user_id } })
+    const stats = statsData.map((data) => data.get({ plain: true }))
+
+    const golfCourse = await GolfCourse.findOne({
+      where: req.session.activeCourseId,
+      raw: true
+    })
+
     res.render('homepage', {
+      golfCourse,
+      stats,
       users,
       handicap,
       name: req.session.name,
@@ -30,17 +37,7 @@ router.get('/', withAuth, async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
-  }  
-
-    // const scoreHistory = await RoundOfGolf.create({
-    //   ...req.body,
-    //   user_id: req.session.user_id,
-    // });
-    //   res.status(200).json(scoreHistory)
-
-
-    
-   
+  }
 });
 
 router.get('/login', async (req, res) => {
@@ -56,17 +53,6 @@ router.get('/sign-up', async (req, res) => {
   res.render('sign-up', {
     logged_in: req.session.logged_in,
   });
-});
-
-router.get('/post-score', withAuth, async (req, res) => {
-  try {
-    res.render('post-score', {
-      name: req.session.name,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
 });
 
 router.get('/stats', withAuth, async (req, res) => {

@@ -3,12 +3,8 @@ const RoundOfGolf = require('./RoundOfGolf');
 const Handicap = require('./Handicap');
 const GolfCourse = require('./GolfCourse');
 const GolfHole = require('./GolfHole');
+const Stats = require('./Stats');
 
-// USERS HAVE MANY ROUNDS
-// User.hasMany(RoundOfGolf,{
-//    foreignKey: 'user_id',
-//    onDelete: 'CASCADE', 
-// });
 
 User.belongsToMany(GolfCourse, {
   through: { model: RoundOfGolf, unique: false },
@@ -34,18 +30,13 @@ RoundOfGolf.hasMany(GolfHole, {
   onDelete: 'CASCADE',
 });
 
-//  A USER HAS MANY GOLF HOLES IN A ROUND OF GOLF
-// User.belongsToMany(GolfHole,{
-//    through: 'RoundOfGolf',
-//    foreignKey: 'user_id',
-//   onDelete: 'CASCADE',
+User.hasMany(Stats, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+})
 
-// })
+Stats.belongsTo(User)
 
-// GolfCourse.hasMany(RoundOfGolf,{
-//     foreignKey: 'golfCourse_id',
-//     onDelete: 'CASCADE',
+Stats.belongsTo(RoundOfGolf)
 
-// })
-
-module.exports = { User, Handicap, GolfHole, GolfCourse, RoundOfGolf };
+module.exports = { User, Handicap, GolfHole, GolfCourse, RoundOfGolf, Stats };
