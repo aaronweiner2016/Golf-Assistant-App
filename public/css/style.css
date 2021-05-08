@@ -142,13 +142,19 @@ a {
         border-color: #BDC581;
     }
     .dropdown-menu {
+        margin: -5.7rem;
         position: relative;
         background-color: black;
         color: #fff;
-        z-index: 1;
+        z-index: 3;
+        height: 100px;
+        width: 14px !important;
+        text-align: center; 
     }
     .dropdown {
-        margin-left: 16rem;
+        /* margin-left: 16rem; */
+    }
+    .logout {
+        margin-top: -1rem;
     }
 
-    /* STATS PAGE BAR CHARTS */
