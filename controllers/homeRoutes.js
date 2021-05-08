@@ -109,22 +109,22 @@ router.get('/score-card', withAuth, async (req, res) => {
     }
 
     let sumFairway = 0;
-   
-      
-      for (var i=0; i<3; i++) {   
-         if (scoreData[i].fairwayHit = true){
-            sumFairway ++;
-          }
-        }
 
-        let sumGreen = 0;
-        
-        for (var i=0; i<3; i++) {   
-          if (scoreData[i].greenHit = true){
-             sumGreen ++;
-           }
-         }
-   
+
+    for (var i = 0; i < 3; i++) {
+      if (scoreData[i].fairwayHit) {
+        sumFairway++;
+      }
+    }
+
+    let sumGreen = 0;
+
+    for (var i = 0; i < 3; i++) {
+      if (scoreData[i].greenHit) {
+        sumGreen++;
+      }
+    }
+
 
     res.render('score-card', {
       sumGreen,

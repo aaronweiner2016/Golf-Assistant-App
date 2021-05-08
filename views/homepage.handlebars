@@ -1,13 +1,13 @@
-<section class="d-flex flex-row" style="width: 100%; height: 100%;">
+<section id="flex-column" style="width: 100%; height: 100%;">
 
-    <div class="d-flex flex-column align-items-center" style="width: 50%; height: 500px; border-right: 1px solid black">
+    <div class="d-flex flex-column align-items-center" style="height: 300px;">
         <h1>Handicap</h1>
         <h3 id="handicap">{{handicap}}</h3>
         <h1>Start new round</h1>
         <a href="/new-game" class="btn btn-primary" style="text-decoration: none; max-width: 150px; width: 100%;">Post
             Score</a>
     </div>
-    <div class="d-flex flex-column align-items-center" style="width: 50%; height: 100%;">
+    <div class="d-flex flex-column align-items-center" style="height: 100%;">
         <h1>Score History</h1>
         {{#each stats as |stat|}}
         <a href="#" class="card mb-2" style="text-decoration: none; color: black; max-width: 400px; width: 100%;">

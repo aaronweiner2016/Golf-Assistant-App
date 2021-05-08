@@ -42,15 +42,15 @@
     section {
       background: url('/mov/loginpg.mov') black no-repeat center center scroll;
     }
-    section video {
+     section video {
       display: none;
     } 
   }
 
-.videoSection {
-  margin-top: -3rem;
-}
+  @media screen and (max-width: 1050px){
+    #flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
-div .flex-column {
-  margin-top: 2rem;
-}
