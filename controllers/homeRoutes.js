@@ -17,9 +17,8 @@ router.get('/', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       order: [['name', 'ASC']],
     });
-
     const users = userData;
-    let statsData = await Stats.findAll({ 
+    let statsData = await Stats.findAll({
       where: { user_id: req.session.user_id },
       include: [{
         model: RoundOfGolf,
@@ -27,14 +26,12 @@ router.get('/', withAuth, async (req, res) => {
           model: GolfCourse
         }]
       }]
-     })
+    })
     const stats = statsData.map((data) => data.get({ plain: true }))
-    console.log(stats[0].round)
     const golfCourse = await GolfCourse.findOne({
       where: req.session.activeCourseId,
       raw: true
     })
-
     res.render('homepage', {
       golfCourse,
       stats,
