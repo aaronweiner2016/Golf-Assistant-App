@@ -14,7 +14,7 @@ startRound.addEventListener('click', async () => {
     if (courseId) {
         const response = await fetch('api/round/' + courseId, {
             method: 'POST',
-            // headers: { 'Content-Type': 'application/json' }
+            
         })
         if (response.ok) {
             console.log("okay")
@@ -62,20 +62,11 @@ nextHole.addEventListener('click', async () => {
     document.querySelector('#score').value = "";
     document.querySelector('#putts').value = "";
 
-    // function checkboxes() {
-    //     var inputElems = document.getElementsByTagName("input"),
-    //         count = 0;
-    //     for (var i = 0; i < inputElems.length; i++) {
-    //         if (inputElems[i].type == "checkbox" && inputElems[i].checked == true) {
-    //             count++;
-    //             alert(count);
-    //         }
-    //     }
-    // }
+   
     document.querySelector('#fairway').checked = false;
     document.querySelector('#greenCheck').checked = false;
 
-    if (holeNum === 10) {
+    if (holeNum === 3) {
         nextHole.innerHTML = "Finish Game"
     }
 
@@ -84,6 +75,3 @@ nextHole.addEventListener('click', async () => {
     }
 })
 
-// home.addEventListener('click', () => {
-//     document.location.replace('/');
-// })

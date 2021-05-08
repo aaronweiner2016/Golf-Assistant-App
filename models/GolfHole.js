@@ -11,10 +11,7 @@ GolfHole.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // roundOfGolf_id: {
-    //     type: DataTypes.INTEGER,
-    //     allowNull: false,
-    //   },
+   
     holeNumber: {
       type: DataTypes.INTEGER,
       allowNull: false,
