@@ -35,8 +35,12 @@ User.hasMany(Stats, {
   onDelete: 'CASCADE',
 })
 
-Stats.belongsTo(User)
+Stats.belongsTo(User);
 
-Stats.belongsTo(RoundOfGolf)
+Stats.belongsTo(RoundOfGolf);
+
+RoundOfGolf.belongsTo(GolfCourse);
+
+GolfCourse.hasMany(RoundOfGolf);
 
 module.exports = { User, Handicap, GolfHole, GolfCourse, RoundOfGolf, Stats };

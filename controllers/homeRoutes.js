@@ -19,9 +19,17 @@ router.get('/', withAuth, async (req, res) => {
     });
 
     const users = userData;
-    let statsData = await Stats.findAll({ where: { user_id: req.session.user_id } })
+    let statsData = await Stats.findAll({ 
+      where: { user_id: req.session.user_id },
+      include: [{
+        model: RoundOfGolf,
+        include: [{
+          model: GolfCourse
+        }]
+      }]
+     })
     const stats = statsData.map((data) => data.get({ plain: true }))
-
+    console.log(stats[0].round)
     const golfCourse = await GolfCourse.findOne({
       where: req.session.activeCourseId,
       raw: true
