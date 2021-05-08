@@ -38,7 +38,7 @@ nextHole.addEventListener('click', async () => {
     var putts = document.querySelector('#putts').value
     var fairway = document.querySelector('#fairway').checked
     var greenCheck = document.querySelector('#greenCheck').checked
-
+    
 
     if (selectedCourse) {
         const response = await fetch('api/holes', {

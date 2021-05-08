@@ -1,5 +1,3 @@
-
-
   section {
     position: relative;
     height: 100vh;
@@ -44,7 +42,7 @@
     section {
       background: url('/mov/loginpg.mov') black no-repeat center center scroll;
     }
-     section video {
+    section video {
       display: none;
     } 
   }
