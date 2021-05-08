@@ -1,6 +1,26 @@
+// const { json } = require("sequelize/types");
+
+// const { response } = require("express");
+
 google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
+
+
+async function apiCall() {
+  const response = await fetch('/api/stats', {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
+  })
+
+  const data = await response.json();
+  console.log('data', data)
+}
+apiCall()
+
+// fetch('/stats')
+//   .then(response => response)
+//   .then(data => console.log(data))
 function drawBasic() {
 
       var data = google.visualization.arrayToDataTable([

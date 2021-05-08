@@ -1,6 +1,7 @@
+const { response } = require('express');
 const { Stats, RoundOfGolf, GolfCourse, GolfHole, Handicap } = require('../../models')
 const router = require('express').Router()
-
+const withAuth = require("../../utils/auth");
 
 router.post('/', async (req, res) => {
     try {
@@ -27,5 +28,19 @@ router.post('/', async (req, res) => {
         res.status(500).send("Couldnt create round");
     }
 });
+
+
+router.get('/', withAuth, async (req, res) => {
+    try {
+        const statsData = await Stats.findAll()
+        const statsAll = statsData.map((data) => data.dataValues);
+
+        res.send(statsAll);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
 
 module.exports = router;

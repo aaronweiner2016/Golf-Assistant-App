@@ -57,6 +57,7 @@ router.get('/sign-up', async (req, res) => {
 
 router.get('/stats', withAuth, async (req, res) => {
   try {
+    
     res.render('stats', {
       name: req.session.name,
       logged_in: req.session.logged_in,
