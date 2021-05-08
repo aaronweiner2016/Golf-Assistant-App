@@ -34,7 +34,8 @@ router.get('/', withAuth, async (req, res) => {
     try {
         const statsData = await Stats.findAll()
         const statsAll = statsData.map((data) => data.dataValues);
-
+        console.log('testing API stats route')
+        console.log(statsAll)
         res.send(statsAll);
     } catch (err) {
         res.status(500).json(err);

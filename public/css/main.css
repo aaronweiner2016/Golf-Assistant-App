@@ -1,3 +1,6 @@
+  *{
+    font-family: 'Courier New', Courier, monospace;
+  }
   section {
     position: relative;
     height: 100vh;
@@ -54,3 +57,87 @@
     }
   }
 
+.statsSection{
+  text-align: center;
+  background-image: url('/images/page.png');
+}
+.statsHead {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#chart_div,
+#chartAp_div {
+  width: 70%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.homepageSection {
+  margin-top: -3.5rem;
+  padding-bottom: 3rem;
+  background-image: url('/images/page.png');
+
+}
+.golfGamesSection  {
+  padding-bottom: 3rem;
+  background-image: url('/images/page.png');
+}
+
+.hcqtahdr {
+  margin-left: 55%;
+  transform: translateX(-55%);
+}
+
+.golfp {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.newGameSection {
+  padding-top: 5rem;
+  text-align: center;
+  background-image: url('/images/page.png');
+  width: 100%; 
+  display: flex; 
+  justify-content: center;
+}
+
+.start-round {
+  margin-left: 55%;
+  transform: translateX(-55%);
+}
+
+.next-hole {
+  margin-left: 55%;
+  transform: translateX(-55%);
+}
+
+.card-header {
+  text-align: center;
+
+}
+h3 {
+  text-align: center;
+}
+
+.handicapForm {
+  margin-left: 55%;
+  transform: translateX(-55%);
+}
+
+
+.textInput {
+  display: inline-block;
+}
+
+.displayInput {
+  display: inline-block;
+}
+
+
+.btnqta {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

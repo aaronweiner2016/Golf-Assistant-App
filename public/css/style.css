@@ -68,13 +68,13 @@ a {
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: #BDC581;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #482ff7;
+    color: #BDC581;
 }
 
 .menu-container .navbar {
@@ -85,6 +85,9 @@ a {
   }
 
 @media only screen and (max-width: 768px) {
+    .golfp > ul > li {
+        list-style-type: none;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -157,4 +160,3 @@ a {
     .logout {
         margin-top: -1rem;
     }
-
